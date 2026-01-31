@@ -407,10 +407,17 @@ footer p {
         font-size: 16px;
     }
 
-    /* عرض عناصر المناطق بشكل عمودي */
+    /* عرض عناصر المناطق بشكل عمودي وتوسيطها */
+    .areas {
+        text-align: center; /* توسيط النص */
+    }
+
     .areas-list {
+        display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: center; /* توسيط العناصر عموديًا */
+        text-align: center; /* توسيط النص داخل الحاوية */
     }
 
     /* جعل أيقونات التواصل جنبًا إلى جنب */
@@ -418,5 +425,4 @@ footer p {
         flex-direction: row;
         justify-content: center;
     }
-
 }
