@@ -391,6 +391,73 @@ footer p {
         flex-direction: column;
         align-items: flex-end;
     }
+    /* تعديل Header في الجوال */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        order: 1;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav ul li {
+        font-size: 1rem;
+    }
+}
+
+/* تعديل Header للكمبيوتر */
+@media (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+    }
+}
+
+/* تخصيص أيقونات التواصل الاجتماعي */
+.contact-buttons {
+    display: flex;
+    justify-content: center; /* توسيط الأيقونات */
+    align-items: center;
+    gap: 20px; /* المسافة بين الأيقونات */
+}
+
+.contact-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تخصيص أزرار الواتساب والبريد الإلكتروني */
+.contact-buttons img {
+    width: 40px; /* تحديد حجم الأيقونة */
+    height: 40px;
+}
     .hero-overlay h1 {
         font-size: 24px;
     }
