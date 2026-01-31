@@ -3,8 +3,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     margin: 0;
     /* استخدم خط "Tajawal" لخط عصري وهادئ */
@@ -12,9 +10,6 @@ body {
     background-color: #f7f9fc;
     color: #333;
     direction: rtl;
-
-
-
 }
 
 .container {
@@ -160,7 +155,6 @@ nav a:hover {
     gap: 30px; /* مسافة بين كل خدمة */
     text-align: center;
     padding: 40px 0;
-    padding: 40px 0;
     background-color: #eaf2fa;
 }
 
@@ -217,8 +211,6 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-
-
 .service-icon {
     width: 81px; /* تحديد حجم الأيقونة */
     height: 81px;
@@ -239,7 +231,6 @@ nav a:hover {
     font-size: 1em;
     margin: 5px 0;
 }
-
 
 /* قسم الاتصال */
 .contact {
@@ -385,18 +376,17 @@ footer p {
     nav ul {
         flex-direction: column;
         gap: 10px;
-        align-items: flex-end;
+        align-items: center; /* لتوسيط الأيقونات في الجوال */
     }
     header .container {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
     }
     /* تعديل Header في الجوال */
 @media (max-width: 768px) {
     nav ul {
         display: none; /* إخفاء القوائم */
     }
-}
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
@@ -538,4 +528,3 @@ footer p {
 .inspection-offer .offer-btn:hover {
     background-color: #005b90;
 }
-
