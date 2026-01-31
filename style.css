@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    /* استخدم خط "Tajawal" لخط عصري وهادئ */
     font-family: 'Tajawal', sans-serif;
     background-color: #f7f9fc;
     color: #333;
@@ -20,13 +19,13 @@ body {
 
 /* رأس الصفحة */
 header {
-    background-color: rgba(244, 244, 244, 0.9); /* شفافية 90% */
+    background-color: rgba(244,244,244,0.9);
     padding: 10px 0;
     border-bottom: 1px solid #eee;
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* لتأثير سلس عند التغيير */
+    transition: background-color 0.3s ease;
 }
 header .container {
     display: flex;
@@ -35,7 +34,6 @@ header .container {
 }
 
 .logo img {
-    /* تكبير حجم الشعار بحيث يكون ارتفاعه وعرضه 100 بكسل للحفاظ على وضوحه */
     height: 126px;
     width: 126px;
 }
@@ -147,62 +145,20 @@ nav a:hover {
 }
 
 /* خدمات وعناصر الفحص */
-
 .services {
     display: flex;
-    flex-wrap: wrap; /* لجعل العناصر تلتف في حال كانت المساحة غير كافية */
-    justify-content: center; /* توزيع الخدمات بشكل متساوي */
-    gap: 30px; /* مسافة بين كل خدمة */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     text-align: center;
     padding: 40px 0;
     background-color: #eaf2fa;
 }
 
-.service-areas {
-    text-align: center; /* توسيط النص */
-    margin: 50px 0; /* مسافة أعلى وأسفل */
-    padding: 30px;
-    background-color: #e0f7fa; /* لون خلفية هادئ */
-    border-radius: 15px; /* زوايا مستديرة للخلفية */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
-}
-
-.service-areas h2 {
-    font-family: 'Tajawal', sans-serif; /* اختيار خط مميز */
-    font-size: 2em; /* حجم الخط */
-    color: #00796b; /* لون النص */
-    margin-bottom: 10px; /* مسافة أسفل العنوان */
-    font-weight: bold;
-}
-
-.service-areas p {
-    font-size: 1.2em;
-    color: #004d40; /* لون النص */
-    font-weight: 500; /* وزن الخط */
-}
-
-.service-areas:hover {
-    background-color: #b2dfdb; /* تغيير اللون عند التمرير */
-    transition: background-color 0.3s ease; /* تأثير ناعم عند التمرير */
-}
-
-.services h2 {
-    text-align: center;
-    color: #003366;
-    background-color: #eaf2fa;
-    margin-bottom: 30px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
 .service-item {
     display: flex;
-    flex-direction: column; /* ترتيب العناصر عموديًا */
-    align-items: center; /* توسيط العناصر أفقيًا */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 20px;
     background-color: #fff;
@@ -212,14 +168,14 @@ nav a:hover {
 }
 
 .service-icon {
-    width: 81px; /* تحديد حجم الأيقونة */
+    width: 81px;
     height: 81px;
-    margin-bottom: 15px; /* المسافة بين الأيقونة والعنوان */
+    margin-bottom: 15px;
 }
 
 .service-item h3 {
     font-size: 1.2em;
-    margin-bottom: 10px; /* المسافة بين العنوان والنص */
+    margin-bottom: 10px;
 }
 
 .service-item ul {
@@ -245,8 +201,6 @@ nav a:hover {
 
 .contact-buttons {
     display: flex;
-    /* نجعل اتجاه هذه الحاوية من اليسار لليمين للتحكم في ترتيب الأزرار */
-    direction: ltr;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
@@ -258,12 +212,10 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* إزالة الخلفية لجعل الأيقونات شفافة */
     background: none;
     border: none;
     padding: 0;
     text-decoration: none;
-    /* تحديد عرض ثابت للحفاظ على تنسيق رأسي للنص والأيقونة */
     width: 80px;
     color: #003366;
     text-align: center;
@@ -271,12 +223,11 @@ nav a:hover {
 }
 
 .btn img {
-    width: 54px;
-    height: 54px;
+    width: 55px; /* تكبير حجم الأيقونة */
+    height: 55px;
     margin-bottom: 5px;
 }
 
-/* عرض اسم المنصة أسفل الأيقونة بشكل واضح */
 .btn span {
     display: block;
     margin-top: 4px;
@@ -288,8 +239,6 @@ nav a:hover {
 .btn:hover {
     transform: translateY(-3px);
 }
-
-/* إزالة ألوان الخلفية السابقة عن الأزرار الاجتماعية */
 
 .hint {
     text-align: center;
@@ -311,11 +260,10 @@ nav a:hover {
 }
 
 .contact-form input,
-    .contact-form textarea {
+.contact-form textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* استخدام نفس الخط المستخدم في الجسم */
     font-family: 'Tajawal', sans-serif;
 }
 
@@ -361,7 +309,6 @@ nav a:hover {
 /* التذييل */
 footer {
     background-color: #000;
-    padding: 100px;
     color: #fff;
     padding: 20px 0;
 }
@@ -371,117 +318,22 @@ footer p {
     margin: 0;
 }
 
-/* استجابة الهواتف الصغيرة */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center; /* لتوسيط الأيقونات في الجوال */
-    }
-    header .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    /* تعديل Header في الجوال */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* إخفاء القوائم */
-    }
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .logo {
-        order: 1;
-        margin-right: 10px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    nav ul li {
-        font-size: 1rem;
-    }
-}
-
-/* تعديل Header للكمبيوتر */
-@media (min-width: 769px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 40px;
-    }
-
-    .logo {
-        margin-right: 30px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    nav ul li {
-        font-size: 1.5rem;
-    }
-}
-
-/* تخصيص أيقونات التواصل الاجتماعي */
-.contact-buttons {
-    display: flex;
-    justify-content: center; /* توسيط الأيقونات */
-    align-items: center;
-    gap: 20px; /* المسافة بين الأيقونات */
-}
-
-.contact-buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-buttons img {
-    width: 40px; /* تحديد حجم الأيقونة */
-    height: 40px;
-}
-    .hero-overlay h1 {
-        font-size: 24px;
-    }
-    .hero-overlay p {
-        font-size: 16px;
-    }
-    .areas-list {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .contact-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
+/* أيقونة واتساب عائمة */
 .whatsapp-icon {
-    position: fixed; /* تثبيت الأيقونة في مكانها */
-    bottom: 20px; /* المسافة من الأسفل */
-    right: 20px; /* المسافة من اليمين */
-    z-index: 1000; /* ضمان أن الأيقونة تظهر فوق باقي المحتوى */
-    border-radius: 50%; /* شكل دائري */
-    padding: 15px; /* المسافة داخل الأيقونة */
-
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 15px;
 }
 
 .whatsapp-icon img {
-    width: 50px; /* عرض الأيقونة */
-    height: 50px; /* ارتفاع الأيقونة */
+    width: 50px;
+    height: 50px;
 }
 
-
-/* قسم عرض الخدمات */
+/* قسم عرض الخدمات المضاف */
 .inspection-offer {
     display: flex;
     flex-direction: column;
@@ -517,7 +369,7 @@ footer p {
 .inspection-offer .offer-btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #0072b5; /* لون الزر */
+    background-color: #0072b5;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -527,4 +379,43 @@ footer p {
 
 .inspection-offer .offer-btn:hover {
     background-color: #005b90;
+}
+
+/* استجابة الهواتف الصغيرة */
+@media (max-width: 600px) {
+    /* إخفاء القائمة في الهيدر عند الجوال */
+    nav ul {
+        display: none;
+    }
+
+    /* توسيط الشعار في الجوال */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* تحجيم وتوسيط الشعار */
+    .logo {
+        margin: 0 auto;
+    }
+
+    /* تقليل حجم العناوين في الصورة الرئيسية */
+    .hero-overlay h1 {
+        font-size: 24px;
+    }
+    .hero-overlay p {
+        font-size: 16px;
+    }
+
+    /* عرض عناصر المناطق بشكل عمودي */
+    .areas-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* جعل أيقونات التواصل جنبًا إلى جنب */
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
