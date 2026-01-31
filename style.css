@@ -419,3 +419,9 @@ footer p {
         justify-content: center;
     }
 }
+/* استجابة للجوال */
+@media (max-width: 600px) {
+    .areas h2 {
+        text-align: center; /* توسيط النص */
+    }
+}
