@@ -393,8 +393,10 @@ footer p {
     }
     /* تعديل Header في الجوال */
 @media (max-width: 768px) {
-    header {
-        display: flex;
+    nav ul {
+        display: none; /* إخفاء القوائم */
+    }
+}
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
