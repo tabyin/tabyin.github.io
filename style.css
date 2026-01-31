@@ -418,10 +418,14 @@ footer p {
         flex-direction: row;
         justify-content: center;
     }
+
 }
+
 /* استجابة للجوال */
 @media (max-width: 600px) {
     .areas h2 {
         text-align: center; /* توسيط النص */
+        width: 100%; /* التأكد من أن النص يأخذ كامل عرض العنصر */
+        margin: 0 auto; /* توسيط العنصر داخل الحاوية */
     }
 }
