@@ -382,6 +382,7 @@ footer p {
 }
 
 /* استجابة الهواتف الصغيرة */
+/* استجابة الهواتف الصغيرة */
 @media (max-width: 600px) {
     /* إخفاء القائمة في الهيدر عند الجوال */
     nav ul {
@@ -407,10 +408,11 @@ footer p {
         font-size: 16px;
     }
 
-    /* عرض عناصر المناطق بشكل عمودي */
+    /* عرض عناصر المناطق بشكل عمودي ومركز */
     .areas-list {
         flex-direction: column;
         gap: 15px;
+        align-items: center; /* هذا السطر سيجعل العناصر تتوسط أفقياً */
     }
 
     /* جعل أيقونات التواصل جنبًا إلى جنب */
@@ -418,5 +420,4 @@ footer p {
         flex-direction: row;
         justify-content: center;
     }
-
 }
