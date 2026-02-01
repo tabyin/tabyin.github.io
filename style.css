@@ -382,11 +382,12 @@ footer p {
 }
 
 /* استجابة الهواتف الصغيرة */
-@media (max-width: 600px) {
-    /* إخفاء القائمة في الهيدر عند الجوال */
-    nav ul {
-        display: none;
+@media only screen and (max-width: 768px) {
+    /* Styles for devices smaller than 768px (like mobile) */
+    body {
+        font-size: 14px;
     }
+}
 
     /* توسيط الشعار في الجوال */
     header .container {
